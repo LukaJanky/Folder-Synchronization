@@ -26,9 +26,9 @@ python main.py --source source --replica replica --log-file log_file --time-inte
 
 ## Example
 
-Perform one-way synchronization from the folder "project_source" to the folder "project-copy" and log the process to "project_synch.txt". Perform the synchronization process every 20 seconds.
+Perform one-way synchronization from the folder "project_source" to the folder "project_replica" and log the process to "project_synch.txt". Perform the synchronization process every 20 seconds.
 Run the following comand:
 
 ```
-python main.py --source project_source --replica project-copy --log-file project_synch.txt --time-interval 20
+python main.py --source project_source --replica project_replica --log-file project_synch.txt --time-interval 20
 ```
