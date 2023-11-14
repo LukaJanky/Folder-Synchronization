@@ -5,6 +5,9 @@
 * Synchronization is performed periodically;
 * File creation/copying/removal operations are logged into a file and to the console output;
 * Folder paths, synchronization interval and log file path can be provided using the command line arguments.
+* The script uses the MD5 hash of files to compare and determine if a file needs to be updated in the replica folder.
+* If the replica folder does not exist, the script will create it.
+* If the source folder does not exist, the script will raise an error.
 
 ## Requirements
 * Python 3.0 or higher;
