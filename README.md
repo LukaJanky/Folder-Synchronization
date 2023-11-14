@@ -15,3 +15,17 @@
 ```
 python main.py --source source --replica replica --log-file log_file --time-interval time_interval
 ```
+
+- `--source`: Path to the source folder that needs to be synchronized (default: "source").
+- `--replica`: Path to the replica folder that will be updated to match the contents of the source folder (default: "replica").
+- `--log-file`: Path to the log file (default: "log.txt").
+- `--time-interval`: Time interval for synchronization in seconds (default: 10).
+
+## Example
+
+Perform one-way synchronization from the folder "project_source" to the folder "project-copy" and log the process to "project_synch.txt". Perform the synchronization process every 20 seconds.
+Run the following comand:
+
+```
+python main.py --source project_source --replica project-copy --log-file project_synch.txt --time-interval 20
+```
